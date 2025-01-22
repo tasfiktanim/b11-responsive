@@ -266,45 +266,42 @@
     }
 
     /* our stories styles */
-    .heading-3{
-    color: rgb(0, 0, 0);
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 57.5px;
-    letter-spacing: 0%;
+.our{
+    background-image: url(assets/bg.png);
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    fill: rgba(254, 163, 1, 0.3)
+    rgba(255, 255, 255, 0.3); 
+}
+
+.heading-3{
     text-align: center;
-    }
+}
 
-    .story-cards{
-        background-image: url(assets/bg.png);
-        background: 
-        linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-        fill: rgba(254, 163, 1, 0.3)
-        rgba(255, 255, 255, 0.3);
-
-    }
-    
-.story-cont{
+.story{
     display: grid;
-    grid-template-columns:repeat(2,1fr);
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.story-cont button{
-    background-color: #3CD8E8;
-    padding: 10px 25px;
-
-    border-radius: 47.93px;
-    color: rgb(255, 255, 255);
-font-family: Raleway;
-font-size: 15.34px;
-font-weight: 500;
-line-height: 28.76px;
-letter-spacing: 0%;
-text-align: left;
-text-transform: capitalize;
-border: none;
+.c-cards{
+    background-color: white;
+    border-radius: 20px;
 }
+
+.story-cont{
+    justify-content: center;
+    margin: 0px 29px 0px 0px
+}
+.story-cards-1{
+    justify-items: center;
+    margin: 0px 30px 0px 150px
+}
+
+.story-cards img{
+    border-radius: 20px 20px 0px 0;
+    margin: 0 0 -15px 0px;
+}
+
 .btn-4 {
     justify-content: center;
     display: flex;
@@ -326,93 +323,70 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-gap: 10;
 padding: 10px;
 }
 
-.story-cards-1 {
-    background-color: white;
-    border-radius: 20px;
-    margin: 0 0 15px 0;
+.story-cont button{
+    padding: 5px 15px;
+    border-radius: 47.93px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    border: none;
 }
 
-.story-cards-1 img{
-    border-radius: 20px 20px 0px 0;
-    margin: 0 0 -15px 0px;
-    /* grid-row: span 2;
-    width: 540.27px;
-    height: 630.52px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255); */
+.story-btn{
+    margin: -50px 0px 0px 50px;
 }
 
-.story-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.story-title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    text-align: left;
+width: 198.04px;
+height: 47.93px;
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+margin: 0px 0px 0px 30px;
 }
 
-.c-card {
-    margin: 0 15px 15px 0;
-}
-.c-card h3{
-    padding: 0 38px;
-}
-
-
-.story-btn {
-    margin: -25px 0 0 35px;
-    background-color: #3CD8E8;
-}
-.sc-img-1{
-    /* width: 540px;
-height: 337px;
-left: 0;
-top: 0; */
-}
 .story-title-1{
-    font-size: 24px;
- /* width: 402.49px;
-height: 69.98px;
-left: 0;
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+line-height: 38.35px;
+width: 402.49px;
+height: 130.98px;
 top: 2.88px;
 display: flex;
 flex-direction: row;
 align-items: center;
-color: rgb(0, 0, 0);
-font-family: Quicksand;
-font-weight: 700;
-line-height: 38.35px;
-letter-spacing: 0%;
-text-align: left; */
+margin: 0 auto;
 }
 
-/* .story-2{
-width: 601px;
-height: 622.4px;
-left: 699px;
-right: -140px;
-top: 197.5px;
-bottom: -189.38px;
-} */
-
-/* shared styles for story cards */
-/* .story-style{
-    color: rgb(0, 0, 0);
-font-family: Quicksand;
+.desc{
+    color: rgb(102, 102, 102);
+font-family: Raleway;
 font-size: 15.34px;
-font-weight: 700;
+font-weight: 500;
 line-height: 28.76px;
-letter-spacing: 0%;
-text-align: left;
-width: 161.05px;
-height: 47.93px;
-left: 0;
-top: 4.79px;
+width: 433.06px;
+height: 75.74px;
+left: 38.35px;
+top: 520.26px;
 display: flex;
 flex-direction: row;
 align-items: center;
-} */
-
+margin: 0px 0px 0px 50px
+}
 
 /* footer styles */
  .footer{
@@ -474,7 +448,7 @@ color: white;
     margin: 0;
  }
 
- .desc{
+ /* .desc{
     color: rgb(255, 255, 255);
     font-family: Quicksand;
     font-size: 20px;
@@ -482,7 +456,7 @@ color: white;
     line-height: 25px;
     letter-spacing: 0%;
     text-align: left;
- }
+ } */
 
  /* .icons{
     
