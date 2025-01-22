@@ -2,7 +2,10 @@
     .display{
         display: flex;
     }
-
+    .nav {
+        justify-content: center;
+    }
+    
     body {
         font-family: Raleway;
     }
@@ -14,16 +17,15 @@
     .container{
         margin: 0 auto;
         padding-top: 50px;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         background-color: #F7F7F7;
     }
 
     /* NAVBAR STYLES */
-    .navbar{
-    /* width: 1440px;
-    height: 102px; */
-    left: 0;
-    top: 0;
+
+.navbar
+{
+
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -34,14 +36,13 @@
     }
 
     .logo{
-        /* Group 1 */
     width: 62px;
     height: 62px;
     }
 
     .nav-item{
     list-style: none;
-    margin: 0px 32px;
+    margin: 0px 25px;
 
     }
 
@@ -83,8 +84,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        gap: 50px;
+        padding: 0 0 0 10px;
     }
 
     .bh, .bimg{
@@ -138,7 +138,6 @@
         font-size: 46px;
         font-weight: 700;
         line-height: 57.5px;
-        letter-spacing: 0%;
         text-align: center;
         margin: 80px 0px;
     }
@@ -148,7 +147,6 @@
     .sc{
         /* width: 367.8px; */
         justify-content: center;
-        height: 476.78px;
         gap: 65.29px;
         /* margin: 0px 265px; */
     }
@@ -211,22 +209,18 @@
         font-size: 15.09px;
         font-weight: 500;
         line-height: 28.3px;
-        letter-spacing: 0%;
+
         text-align: center;
-    width: 286.26px;
-    height: 74.51px;
-    left: 40.88px;
-    top: 290.98px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+        width: 286.26px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .sc h4{
         font-family: Quicksand;
         font-size: 15.09px;
         font-weight: 700;
         line-height: 28.3px;
-        letter-spacing: 0%;
         text-align: center;
     }
 
@@ -261,6 +255,7 @@
 
 .heading-3{
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .story{
@@ -272,11 +267,12 @@
 .c-cards{
     background-color: white;
     border-radius: 20px;
+    padding-bottom: 25px;
 }
 
 .story-cont{
     justify-content: center;
-    margin: 0px 29px 0px 0px
+    margin: 0px 70px 0px -35px
 }
 .story-cards-1{
     justify-items: center;
@@ -383,6 +379,10 @@ margin: 0px 0px 0px 50px
     margin: -80px 0px 0px 0px
  }
 
+ .footer span {
+    max-width: 1250px;
+ }
+
 
 .fk-logo {
     align-items: center;
@@ -436,3 +436,89 @@ color: white;
     gap: 10px;
     
  }
+
+ @media screen and (max-width:576px) {
+
+    .nav-links, .scl, .btn-primary{
+        display: none;
+     }
+
+     .nav{
+        justify-content: flex-start;
+     }
+    
+    
+        .banner{
+            flex-direction: column-reverse;
+            align-items: normal;
+            text-align: center;
+        }
+
+        .ht{
+            font-size: 50px;
+            margin: 0px 0px 30px 20px
+        }
+
+        .banner p{
+            text-align: -webkit-center;
+            margin: 0px 0px 20px 8px;
+            padding: 0px 0px 0px 65px;
+        }
+
+        .bimg , .bh{
+            margin: 0px;
+        }
+
+      .btn-2nd{
+        margin:  0px 0px 0px 135px;
+      }
+     
+        .sc{
+        display: flex;
+        flex-direction: column;
+     }
+    
+     .sc123{
+        display: flex ;
+            flex-direction: column;
+            align-items: center;
+     }
+    .story-cards-1{
+        display: none;
+    }
+    
+    .story{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0 0 300px;
+    }
+    .footer{
+        padding: 20px;
+    }
+    
+    .fc{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .desc-1{
+        padding: 0px 0px 10px 0px;
+        font-size: 21px;
+    
+    .fk-logo{
+        /* padding: 0px; */
+        margin: 0px 0px 0px -10px
+    }
+    .fk h2{
+        font-size: 35px;
+    }
+
+    /* Show the burger menu icon */
+  .burger-icon {
+    display: block;
+
+ }
+ 
+ 
+    
+ 
